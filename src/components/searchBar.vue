@@ -14,7 +14,7 @@ const handleSearch = () => {
     searchTerm.timeout = setTimeout( async() => {
         if (searchTerm.query !== '') {
 
-            const response = await fetch(`http://api.weatherapi.com/v1/search.json?key=b5d8dc347ec54185977173721240403&q=${searchTerm.query}`)
+            const response = await fetch(`https://api.weatherapi.com/v1/search.json?key=b5d8dc347ec54185977173721240403&q=${searchTerm.query}`)
             const data = await response.json()
             searchTerm.results = data
             
