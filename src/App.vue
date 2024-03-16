@@ -47,9 +47,12 @@ const deleteCity = (name) => {
       <div class="grid grid-cols-2 p-5">
         <div class="flex flex-col justify-center ml-5">
           
-          <div class="hero-text text-white">
+          <div class="hero-text text-white pb-3">
             <h1 class="text-4xl mb-3 hero-title font-bold">Welcome to Weatherly<span class="text-[#F2B705] text-4xl">!</span></h1>
             <p class="text-lg mb-2">Get accurate weather forecasts for the next 5 days and plan your activities with confidence.</p>
+            
+            <p class="text-[#F2B705]  ">Add as many locations as you want <i class="fa-solid fa-location-crosshairs"></i></p>
+
           </div>
           
           <!--Search Bar-->
@@ -74,4 +77,4 @@ const deleteCity = (name) => {
 
 
   </main>
-</template>./components/Location.vue./components/userLocation.vue
+</template>

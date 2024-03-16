@@ -49,7 +49,7 @@ const getWeather = async (id) => {
         <i class="fa-solid fa-magnifying-glass p-2 text-[#093358]"></i>
         <input
           type="text"
-          placeholder="Search location..."
+          placeholder="Add a new location card..."
           class="rounded-r-lg p-2 border-0 outline-0 focus:ring-2 focus:ring-[#F2B705] ring-inset w-full"
           v-model="searchTerm.query"
           @input="handleSearch"
