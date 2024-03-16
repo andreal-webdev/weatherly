@@ -42,10 +42,9 @@ const getWeather = async (id) => {
 
 <template>
   <div>
-    
     <!-- search field -->
-    <form>
-      <div class=" w-1/2 bg-[#bfdbfe] border border-[#093358] rounded-lg shadow-lg flex items-center">
+    <form class="w-full ">
+      <div class="bg-[#bfdbfe] border border-[#093358] rounded-lg shadow-lg flex items-center">
         <i class="fa-solid fa-magnifying-glass p-2 text-[#093358]"></i>
         <input
           type="text"
@@ -57,12 +56,13 @@ const getWeather = async (id) => {
       </div>
     </form>
     <!-- search suggestions -->
-    <div class=" w-1/2 bg-white my-2 rounded-lg shadow-lg">
-        <div v-if="searchTerm.results !== null">
-            <div v-for="place in searchTerm.results" :key="place.id">
-                <button @click="getWeather(place.id)" class="px-3 my-2 hover:text-[#093358] hover:font-bold w-full text-left"> {{ place.name }}, {{ place.region }}, {{ place.country }}</button>
-            </div>
+    <div class="w-full  bg-white my-2 rounded-lg shadow-lg">
+      <div v-if="searchTerm.results !== null">
+        <div v-for="place in searchTerm.results" :key="place.id">
+          <button @click="getWeather(place.id)" class="px-3 my-2 hover:text-[#093358] hover:font-bold w-full text-left"> {{ place.name }}, {{ place.region }}, {{ place.country }}</button>
         </div>
+      </div>
     </div>
   </div>
+
 </template>
