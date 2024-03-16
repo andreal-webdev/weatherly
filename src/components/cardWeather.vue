@@ -31,7 +31,7 @@ const nextSlide = () => {
 
 
 <template>
-  <div :class="[place && place.current && place.current.is_day === 1 ? 'bg-day' : 'bg-night', 'text-white p-3 md:p-2 rounded-lg shadow-lg gap-4 mb-4 relative overflow-hidden']">
+  <div :class="[place && place.current && place.current.is_day === 1 ? 'bg-day' : 'bg-night', 'text-white p-4 md:p-6 rounded-lg shadow-lg gap-4 mb-4 relative overflow-hidden']">
     <!-- Location & time -->
     <div class="mb-2">
         <div class="flex items-center justify-end mb-2">
