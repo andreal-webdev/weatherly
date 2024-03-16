@@ -77,8 +77,8 @@ const nextSlide = () => {
                 </div>
             </div>
         </div>
-        <button class="carousel-prev md:hidden" @click="prevSlide"><i class="fa-solid fa-circle-chevron-left"></i></button>
-        <button class="carousel-next md:hidden" @click="nextSlide"><i class="fa-solid fa-circle-chevron-right"></i></button>
+        <button class="carousel-prev" @click="prevSlide"><i class="fa-solid fa-circle-chevron-left"></i></button>
+        <button class="carousel-next" @click="nextSlide"><i class="fa-solid fa-circle-chevron-right"></i></button>
     </div>
 
     <borderLine />
@@ -146,7 +146,7 @@ const nextSlide = () => {
   .carousel-prev,
   .carousel-next {
     position:absolute;
-    top: 50%;
+    top: 47%;
     background-color: #07223d33;
     color: white;
     border: none;
