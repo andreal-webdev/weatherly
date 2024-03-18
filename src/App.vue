@@ -46,7 +46,7 @@ const deleteCity = (name) => {
         <div class="flex flex-col justify-center md:ml-5">
           <div class="hero-text text-white pb-3">
             <h1 class="text-4xl md:text-5xl mb-3 hero-title font-bold">Welcome to Weatherly<span class="text-[#F2B705] text-4xl">!</span></h1>
-            <p class="text-lg md:text-xl mb-2">Get accurate weather forecasts for the next 5 days and plan your activities with confidence.</p>
+            <p class="text-lg md:text-xl mb-2">Get accurate weather forecasts for the next 3 days and plan your activities with confidence.</p>
             <p class="text-[#F2B705] text-lg md:text-xl">Add as many locations as you want <i class="fa-solid fa-location-crosshairs"></i></p>
           </div>
           
